@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적 변수 실습</title>
+    <script>
+        var num= 100;
+        var num2= 0.9;
+        var name = prompt("당신의 이름은 무엇입니까?","정성훈");
+        console.log(name);
+        var tall = Number(prompt("당신의 키는 ?",174));
+        var weight = prompt("당신의 몸무게는?",74);
+        weight = Number(weight);
+        var result = (tall-num)*num2;
+        document.write("접속자의 이름은 "+ name + " 입니다.<br>");
+        document.write("계산식에 사용된 키는 <b>"+ tall +"</b> cm입니다.<br>");
+        document.write("계산식에 사용된 몸무게는" + weight + "kg입니다.<br>");
+        document.write("적정 몸무게는" + result + "kg입니다.")
+
+        //1.입력받은 데이터를 숫자형으로 형변환
+        //2.제시된 시안대로 브라우저에 출력
+        //내가한거
+        // var tall = 174;
+        // var weight = 74;
+        // var result;
+        // var name = "김명철"; 
+        // result = (tall-weight)*0.9
+        // document.write("접속자의 이름은 " + name + "입니다.<br></br>")
+        // document.write("계산식의 사용된 키는 " + tall +" cm입니다<br></br>")
+        // document.write("")
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

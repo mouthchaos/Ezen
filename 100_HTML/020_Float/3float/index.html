@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            margin: 0 auto;
+            width: 1000px;
+            padding: 30px;
+            border: 1px solid #000;
+        }
+        header{
+            line-height: 100px;
+            background-color: blue;
+            padding: 10px;
+        }
+        header h1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        main{
+            padding: 20px;
+            background-color: gray;
+        }
+        h2{
+            font-size: 20px;
+            font-weight:600;
+            margin-bottom: 20px;
+        }
+        section{
+            padding: 20px;
+            background-color: red;
+        }
+        /* 플롯해제 */
+        section::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        section #left_side{
+            background-color: orange;
+            width: 150px;
+            padding: 30px;
+            /* 플롯 */
+            float: left;
+        }
+        section #left_side li{
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+        section article{
+            background-color: pink;
+            width: 500px;
+            padding: 20px;
+            margin-left: 30px;
+            /* 플롯 */
+            float: left;
+        }
+        section #right_side{
+            background-color: rgb(233, 7, 165);
+            width: 150px;
+            padding: 30px;
+            list-style-type: disc;
+            /* 플롯 */
+            float: right;
+        }
+        section #right_side li{
+            list-style-type: disc;
+            margin-left: 15px;
+        }
+        
+        footer{
+            padding: 30px;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>사이트제목</h1>
+        </header>
+        <main role="main">
+            <section>
+                <aside id="left_side">
+                    <h2>사이드바</h2>
+                    <ul>
+                        <li><a href="#">메뉴1</a></li>
+                        <li><a href="#">메뉴2</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                    </ul>
+                </aside>
+                <article>
+                    <h2>본문</h2>
+                    <p>
+                        이번 회의에서는 폐막 섹션을 포함해 모두 5개의 공식 세션이 마련됐다. 첫날 낮 오찬과 함께 시작되는 첫 세션은 '세계 경제 무역 투자'를 주제로 열리며 이어 '혁신'을 주제로 한 두 번째 세션이 진행된다. <br><br>
+                        첫 세션에서 정상들은 세계 경제의 성장을 견인하고 지속가능한 성장을 실현하기 위해 모든 정책수단을 활용하기로 뜻을 모을 예정이다. <br><br>
+                        또 자유롭고 공정한 무역의 중요성을 공유하는 한편 세계무역기구(WTO) 개혁의 속도를 높이기로 할 것으로 예상된다. 이 세션에서는 문재인 대통령이 발언자로 나선다.
+                    </p>
+                </article>
+                <aside id="right_side">
+                    <h2>사이드바</h2>
+                    <ul>
+                        <li><a href="#">우측메뉴1</a></li>
+                        <li><a href="#">우측메뉴2</a></li>
+                        <li><a href="#">우측메뉴3</a></li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <h2>푸터영역</h2>
+            <p>
+                copyright all rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

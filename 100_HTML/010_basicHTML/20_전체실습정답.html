@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체실습정답</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: #999;
+        }
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        img{
+            width: 360px;
+        }
+        .menu ul li{
+            display: inline-block;
+            margin: 20px;
+        }
+        .menu ul li a:hover{
+            color: red;
+            background-color: yellow;
+        }
+        section h2{
+            font-family: 'Oswald , sans-serif';
+            font-size: 3rem;
+            margin: 50px 0;
+        }
+        fieldset{
+            width: 600px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        footer{
+            height: 240px;
+            background-image: url(./images/cloud.png);
+            background-size: cover;
+        }
+        footer p{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <img src="./images/cloud.png" alt="이미지">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">MENU1</a></li>
+                        <li><a href="#">MENU2</a></li>
+                        <li><a href="#">MENU3</a></li>
+                        <li><a href="#">MENU4</a></li>
+                        <li><a href="#">MENU5</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </header>
+        <main role="main">
+            <section>
+                <h2>2023-01-12</h2>
+                <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum ullam et cum
+                ipsa voluptatum error incidunt quibusdam, reiciendis laudantium magni qui. Ab
+                deserunt neque atque voluptate officia, non et aut?
+                </p>
+            </section>
+            <section>
+                <h2>Form List</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Log-In infomation</legend>
+                        <ul>
+                            <li>
+                                <label for="a_id">ID : </label>
+                                <input type="text" id="a_id" size="12" autofocus>
+                            </li>
+                            <li>
+                                <label for="a_pw">PASSWORD : </label>
+                                <input type="password" id="a_pw" maxlength="8">
+                            </li>
+                            <li>
+                                <label for="a_pw">PASSCHECK : </label>
+                                <input type="password" id="a_pw2" maxlength="8">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Department</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="check1" value="web" checked>Web publishing
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="check2" value="app" checked>App Debeloper
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="check3" value="planner" checked>Web Planner
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p>
+                        <a href="http://www.google.com" target="_blank">
+                            <input type="button" value="OK Google" id="google">
+                        </a>
+                    </p>
+                </form>
+            </section>
+            <aside>
+                <a href="#"><input type="button" value="Top"></a>
+            </aside>
+        </main>
+        <footer>
+            <p>
+                Copyright All Rights Reserved., MCSSAM
+            </p>
+        </footer>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        div{
+            padding: 20px;
+        }
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        #header{
+            background-color: dodgerblue;
+        }
+        #container{
+            background-color: gray;
+        }
+        #container::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #container #cover{
+            background-color: red;
+            float: left;
+        }
+        #container #content1{
+            width: 130px;
+            background-color: orange;
+            float: left;
+        }
+        #container #content2{
+            width: 450px;
+            background-color: hotpink;
+            margin-left: 20px;
+            margin-right: 20px;
+            float: left;
+        }
+        #container #content3{
+            width: 130px;
+            background-color: deeppink;
+            float: right;
+        }
+        #footer{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>사이트 제목</h1>
+        </div>
+        <div id="container">
+            <div id="cover">
+                <div id="content1">
+                    <h2>왼쪽메뉴</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">왼쪽메뉴1</a></li>
+                            <li><a href="#">왼쪽메뉴2</a></li>
+                            <li><a href="#">왼쪽메뉴3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="content2">
+                    <h2>본문</h2>
+                    <p>
+                        정부가 부동산 규제 완화 방안을 줄기차게 내놓고 있지만, 주택 시장 침체가 갈수록 심해지고 있다. 집을 사려는 수요가 사라져 매물만 쌓이고,
+                        아파트 매매와 전세 가격은 역대 최대 폭으로 떨어지는 상황이다. 특히 전세 시장이 심각하다. 최근 부동산 시장 상황을 알아봤다.
+                    </p>
+                    <p>
+                        정부가 부동산 규제 완화 방안을 줄기차게 내놓고 있지만, 주택 시장 침체가 갈수록 심해지고 있다. 집을 사려는 수요가 사라져 매물만 쌓이고,
+                        아파트 매매와 전세 가격은 역대 최대 폭으로 떨어지는 상황이다. 특히 전세 시장이 심각하다. 최근 부동산 시장 상황을 알아봤다.
+                    </p>
+                    <p>
+                        정부가 부동산 규제 완화 방안을 줄기차게 내놓고 있지만, 주택 시장 침체가 갈수록 심해지고 있다. 집을 사려는 수요가 사라져 매물만 쌓이고,
+                        아파트 매매와 전세 가격은 역대 최대 폭으로 떨어지는 상황이다. 특히 전세 시장이 심각하다. 최근 부동산 시장 상황을 알아봤다.
+                    </p>
+                </div>
+            </div>    
+            <div id="content3">
+                <h2>사이드바</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">우측메뉴1</a></li>
+                        <li><a href="#">우측메뉴2</a></li>
+                        <li><a href="#">우측메뉴3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="footer">
+            <h2>푸터영역</h2>
+            <p>
+                Copyright All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM,문서객체모델</title>
+</head>
+<body>
+    <script>
+        // A. 요소 노드와 텍스트 노드 모두를 추가하는 경우
+        // 1. 요소 노드 생성
+        var heading = document.createElement("h1");
+        // 2. 텍스트 노드 생성
+        var text = document.createTextNode("텍스트 노드를 생성");
+        // 3. 요소 노드와 텍스트 노드 도큐먼트 연결
+        heading.appendChild(text);
+        document.body.appendChild(heading);
+
+        // B. 요소 노드만 있는 경우(속성값 추가)
+        var img = document.createElement('img');
+        img.src = "./images/img1.jpg";
+        img.alt = "식물이미지";
+        img.width = 200;
+        img.height = 200;
+        document.body.appendChild(img);
+
+        // 이벤트 방법:인라인
+        // 실습. 이벤트로 이미지 바꾸기
+        function chImg(){
+            // alert('aa');
+            img.setAttribute("src","./images/img2.jpg");
+            img.setAttribute('alt','바뀐 이미지');
+            img.setAttribute('width',300);
+            img.setAttribute('height',300);
+        }
+        function restoreImg(){
+            // alert('bb');
+            img.setAttribute("src","./images/img1.jpg");
+            img.setAttribute('alt','바뀐 이미지');
+            img.setAttribute('width',300);
+            img.setAttribute('height',300);
+        }
+
+    </script>
+
+    <input type="button" value="이미지바꾸기" onclick="chImg()">
+    <input type="button" value="이미지되돌리기" onclick="restoreImg()">
+</body>
+</html>

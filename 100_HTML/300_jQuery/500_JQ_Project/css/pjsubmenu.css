@@ -1,0 +1,70 @@
+@charset "utf-8";
+#wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    background-color: #504f4f;
+}
+header .logo{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    background: darkblue;
+    font-size: 0.8rem;
+}
+
+
+/* GNB메뉴 */
+nav{
+    width: 100%;
+    height: 60px;
+    background: #8b8787;
+    line-height: 60px;
+}
+
+
+/* 1depth 메뉴 */
+nav .gnb{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+nav .gnb li{
+    width: 200px;
+    color: #fff;
+    background: #ada7a7;
+    /* 포지션 위치기준값 */
+    position: relative;
+    /* 트랜지션 */
+    transition: all 1s;
+    cursor: pointer;
+}
+nav .gnb li:hover{
+    background: #7b7878;
+}
+
+
+/* 2depth 메뉴 */
+.gnb .submenu{
+    width: 100%;
+    /* 포지션 */
+    position: absolute;
+    z-index: 100;
+    /* 로딩시 가리기 */
+    display: none;
+}
+.gnb .submenu p{
+    background-color: palevioletred;
+    /* 트랜지션 */
+    transition: all 1s;
+}
+.gnb .submenu p:hover{
+    background-color: #ad2a67;
+}
+.slide img{
+    width: 100%;
+}

@@ -1,0 +1,101 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;
+}
+#wrap{
+    padding: 20px;
+    border: 8px solid #ccc;
+
+}
+/* 헤더영역 */
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 88px;
+}
+header h1{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+header p{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* 섹션영역 */
+section h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+section h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+section table{
+    margin-bottom: 32px;
+}
+section table tr{
+    margin-bottom: 12px;
+}
+section table th{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: silver;
+    text-align: left;
+}
+section table td{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+section div{
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+
+
+section h4{
+    margin-bottom: 32px;
+    
+}
+section h4 span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+section h4 p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: silver;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+section h5 img{
+    width: 40%;
+    position: fixed;
+    bottom: 300px;
+    right: -10px;
+    z-index: -1;
+}
+
+/* 푸터영역 */
+footer{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    
+}
+
+footer p {
+    font-size: 0.5rem;
+
+}

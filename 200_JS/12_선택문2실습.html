@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS + JS</title>
+    <link rel="stylesheet" href="./css/css/font.css">
+    <link rel="stylesheet" href="./css/css/reset.css">
+    <!-- <script>
+        var num = prompt('강의실 번호입력 1, 2, 3중 하나 선택' ,'1');
+        var ho = null;
+        switch(num){
+            case "1":
+                ho = "401";
+                break;
+            case "2":
+                ho = "402";
+                break;
+            case "3":
+                ho = "403";
+                break;
+            default:
+                alert('다시 입력하세요!');
+                location.reload()
+        }
+        if(ho==1){
+            document.write('웹 디자인 섹션은<span>' + ho +'</span>에서 진행')
+        }else if(ho==2){
+            document.write('웹 개발 섹션은<span>' + ho + '</span>에서 진행')
+        }else if(ho==3){
+            document.write()
+        }
+    </script>
+    <style>
+        *{
+            background-color: blue;
+            margin: 0 auto;
+            text-align: center;
+        }
+        body{
+            font-size: 50px;
+        }
+        span{
+            color: yellow;
+        }
+    </style> -->
+    <script>
+        var part = prompt("1-웹디자인,2-웹개발,3-웹기획 중 하나 선택",'1' );
+        switch(part){
+            case "1":
+                document.write("<p>웹디자인 섹션은<strong>401호</strong>에서 진행 </p>");
+                break;
+            case "2":
+                document.write("<p>웹개발 섹션은<strong>402호</strong>에서 진행 </p>");
+                break;
+            case "3":
+                document.write("<p>웹기획 섹션은<strong>403호</strong>에서 진행 </p>");
+                break;
+                default:
+                    alert("잘못입력!");
+                    location.reload()
+        }
+    </script>
+    <style>
+        body{
+            background-color: #0c3268;
+            color: silver;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 1px 2px 1px #000;
+        }
+        p strong{
+            font-size: 2.4rem;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

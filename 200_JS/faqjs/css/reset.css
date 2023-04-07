@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+
+/* 플롯해제 클리어 픽스 */
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 마진, 패딩 초기화 */
+.mt {margin-top: 0 !important;}
+.mr {margin-right: 0 !important;}
+.mb {margin-bottom: 0 !important;}
+.ml {margin-left: 0 !important;}
+
+.pt {padding-top: 0 !important;}
+.pr {padding-right: 0 !important;}
+.pb {padding-bottom: 0 !important;}
+.pl {padding-left: 0 !important;}

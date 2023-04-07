@@ -1,0 +1,211 @@
+@charset "utf-8";
+#wrap {
+    /* width: 1440px; */
+    width: 100%;
+    /* height: 1800px; */
+    height: 100%;
+    margin: 0 auto;
+    color: skyblue;
+}
+.w1200 {
+    /* width: 1200px; */
+    /* (1200/1440)*100 = 83.33333333333334 */
+    width: 83.3333%;
+    margin: 0 auto;
+}
+/* 슬라이드영역 시작 */
+#slide {
+    margin-bottom: 60px;
+    /* (60/1800)*100 = 3.3333333333333335 */
+    margin-bottom: 3.3333%;
+}
+#slide .menu {
+    margin: 10px auto;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#slide .menu article {
+    cursor: pointer;
+    /* 위치기준값 */
+    position: relative;
+}
+#slide .menu article .img2{
+    transition: all 1s;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* 숨기기 */
+    display: none;
+
+} 
+#slide .menu article:hover .img2 {
+    display: block;
+}
+#slide .menu ul{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+}
+#slide .menu ul li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+#slide .menu ul li a:hover {
+    color: red;
+    background-color: gray;
+    transition: all 0.8s;
+}
+#slide>img {
+    width: 100%;
+    height: auto;
+
+}
+/* 슬라이드영역 끝 */
+
+/* 프로모션영역 시작 */
+#promotion {
+    /* margin-bottom: 80px; */
+    /* (80/1800)*100 = 4.444444444444445 */
+    margin-bottom: 4.4444%;
+}
+#promotion .we {
+    /* margin-bottom: 60px; */
+    /* (60/1800)*100 = 3.3333333333333335 */
+    margin-bottom: 3.3333333333333335%;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#promotion .we h1 {
+    color: aqua;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#promotion nav ul {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#promotion nav ul li {
+    text-align: center;
+}
+#promotion nav ul li i,
+#promotion nav ul li h2 {
+    margin-bottom: 20px;
+}
+#promotion nav ul li i {
+    /* width: 60px; */
+    font-size: 250%;
+    height: auto;
+}
+/* 프로모션영역 끝 */
+/* work영역 시작 */
+#work h1 {
+    font-size: 3rem;
+    /* margin-bottom: 50px; */
+    /* (50/1800)*100 = 2.7777777777777777 */
+    margin-bottom: 2.7778%;
+}
+#work .works{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#work .works .box{
+    width: 100%;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: column nowrap;
+}
+#work .works .box img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+}
+/* work영역 끝 */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+/* 768px 이하 */
+@media screen and (max-width:768px){
+    /* 프로모션 변경 */
+    #promotion {
+        /* margin-bottom: 80px; */
+        /* (80/1800)*100 = 4.444444444444445 */
+        margin-bottom: 4.4444%;
+    }
+    #promotion .we {
+        /* margin-bottom: 60px; */
+        /* (60/1800)*100 = 3.3333333333333335 */
+        margin-bottom: 3.3333333333333335%;
+        /* 플렉스 */
+        display: flex;
+        /* 변경 */
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #promotion .we h1 {
+        font-size: 3rem;
+    }
+    #promotion nav ul {
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    #promotion nav ul li {
+        /* 변경 */
+        width: 50%;
+        text-align: center;
+    }
+    #promotion nav ul li i,
+    #promotion nav ul li h2 {
+        margin-bottom: 20px;
+    }
+    #promotion nav ul li i {
+        font-size: 250%;
+        height: auto;
+    }
+
+    /* Work 변경 */
+    #work h1 {
+        font-size: 3rem;
+        /* margin-bottom: 50px; */
+        /* (50/1800)*100 = 2.7777777777777777 */
+        margin-bottom: 2.7778%;
+    }
+    #work .works{
+        width: 100%;
+        /* 플렉스 */
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    #work .works .box{
+        width: 100%;
+        height: auto;
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    #work .works .box img {
+        width: 50%;
+        height: auto;
+        border: 1px solid #000;
+    }
+    
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return문</title>
+    <script>
+        // 선언적 함수명 plusNum, 매개변수 있는 함수
+        // (기능)호출시에 매개변수에 무조건 +10(경고창)
+
+        // 1. return문 : 호출하는 곳으로 결괏값을 던져줌
+
+        // var num = 0;
+        // function plusNum(num){
+        //     return num+10;
+        // }
+        // alert(plusNum(10));
+
+        // 2. return문 2 : return false; = 여기까지만 실행해
+        var int = 10;
+        var sum = 0;
+        var mul = 0;
+        function cal(int1){
+            sum = int1 + int;
+            mul = int1 * int;
+            return sum;
+            return mul;
+        }
+        document.write(cal(100));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 

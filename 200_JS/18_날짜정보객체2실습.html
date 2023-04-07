@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜객체 이용 남은 날짜 구하기</title>
+    <style>
+        span{
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // 1. 날짜객체 now변수에 할당
+        var now = new Date();
+        // 2. 해당년도 구하기 = 경고창
+        // alert(now.getFullYear());
+        var nowYear = now.getFullYear();
+        // alert(nowYear);
+        // 3. 디데이 설정
+        var dDay = new Date(nowYear,11,25);
+        alert(dDay);
+        // 4. 디데이 설정 날짜 - 현재날짜
+        var theDay = dDay.getTime() - now.getTime();
+        console.log(theDay);
+        // 5. 밀리세컨 단위를 일수로 단위 맞추기
+        var result = theDay/86400000;
+        console.log('남은날짜 밀리세컨 : ',result);
+        var ceilResult = Math.ceil(result);
+        document.write('<h1>D-Day까지 남은 날</h1><br>' +'D-Day  :<span>' + ceilResult + '</span>일 남았습니다.');
+
+    </script>
+</head>
+<body>
+    <!-- 1초 = 1000밀리세컨
+         1분 = 60*1000 = 60000밀리세컨
+         1시간 60*60000 = 3600000밀리세컨
+         1일 = 24*3600000 = 86400000밀리세컨 -->
+</body>
+</html>

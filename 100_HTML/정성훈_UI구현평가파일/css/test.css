@@ -1,0 +1,141 @@
+@charset "utf-8";
+#wrap{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 헤더영역 */
+header{
+    height: 50px;
+    line-height: 50px;
+}
+.logo{
+    width: 30%;
+    float: left;
+}
+.logo h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo h1:hover{
+    color: yellowgreen;
+}
+.menu{
+    padding-left: 30%;
+    width: 70%;
+    float: right;
+}
+.menu li{
+    margin-left: 5%;
+    /* 플롯 */
+    float: left;
+}
+.menu li a:hover{
+    color: #ff8800;
+}
+
+/* 섹션영역 */
+.sec{
+    margin-bottom: 50px;
+}
+.sec img{
+    width: 100%;
+}
+.sec1{
+    margin-bottom: 100px;
+}
+.sec1 nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sec1 nav ul li{
+    margin-left: 4%;
+}
+
+
+/* 미드텍스트영역 */
+#midtext{
+    margin-bottom: 4.4444%;
+}
+#midtext .weare{
+    margin-bottom: 3.3333333333333335%;
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#midtext .weare h1{
+    color: #00b1dd;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#midtext nav ul{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#midtext nav ul li{
+    text-align: center;
+}
+#midtext nav ul li i,
+#midtext nav ul li h2{
+    margin-bottom: 20px;
+}
+#midtext nav ul li i{
+    font-size: 250%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* 콘텐츠영역 */
+main{
+    width: 100%;
+}
+main h1{
+    color: #00b1dd;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align-last: left;
+    margin-bottom: 50px;
+}
+#content li{
+    width: 25%;
+    float: left;
+}
+#content li img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어쿼리 */
+/* 768px이하 */
+@media screen and (max-width:768px){
+    #content li{
+        width: 50%;
+    }
+} 

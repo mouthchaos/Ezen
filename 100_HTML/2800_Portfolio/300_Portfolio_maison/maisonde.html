@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maison de concept</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .w1240{
+        width: 1240px;
+        margin: 0 auto;
+    }
+    body{
+        color: #353535;
+        background: #fff;
+    }
+    #wrap{
+        width: 1903px;
+        
+    }
+
+    .login ul{
+        height: 45px;
+        line-height: 45px;
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    .login ul li{
+        font-size: 10px;
+        font-weight: 400;
+        font-family: "Roboto",'Nanum gothic';
+        margin-right: 18px;
+        color: #000;
+
+    }
+    .login ul img{
+        vertical-align: middle;
+        width: 13px;
+        height: 13px;
+    }
+    .logo h1{
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .logo img{
+        /* 포지션 */
+        position: relative;
+        left: -15px;
+        top: -3px;
+        z-index: 1; 
+    }
+    .gnb{
+        height: 55px;
+        line-height: 55px;
+        font-family: "Roboto",Nanum gothic;
+    }
+    .gnb ul{
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .gnb ul li{
+        letter-spacing: .025em;
+        font-size: 15px;
+        margin-left: 38px;
+        color: #000;
+    }
+    .gnb ul li a:hover{
+        color: silver;
+    }
+    .gnb .span{
+        letter-spacing: .025em;
+        font-size: 16px;
+        font-weight: 700;
+        color: #61beb3;
+    }
+
+    .sub_menu_menu li{
+        display: none;
+    }
+    .sub_menu_menu li:hover{
+        display: block;
+    }   
+
+
+
+    /* 섹션영역 */
+    .sec1{
+        margin-top: 30px;
+    }
+    .sec2 h2{
+        text-align: center;
+        font-family: "Roboto",Nanum gothic;
+        font-size: 26px !important;
+        font-weight: 600;
+        color: #000;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <!-- 헤더영역 시작 -->  
+        <header>    
+            <div class="login w1240">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MY&nbsp;PAGE</a></li>
+                    <li class="no_mr"><a href="#"><img src="./images/dotbogi2020.png" alt="검색아이콘"></a></li>
+                </ul>
+            </div>
+            <div class="logo w1240">
+                <h1><img src="./images/maisonlogo.png" alt="메종드로고"></h1>
+            </div>
+            <div class="gnb w1240">
+                <ul>
+                    <li class="span no_ml"><a href="#">EVENT</a></li>
+                    <li>
+                        <div class="sub_menu">
+                            <li class="no_ml">
+                                <a href="#">BRAND</a>
+                                <!-- 2depth -->
+                                <ul class="sub_menu_menu">
+                                    <li><a href="#">블로무스</a></li>
+                                    <li><a href="#">루씨에어</a></li>
+                                    <li><a href="#">르푸</a></li>
+                                    <li><a href="#">네오즈</a></li>
+                                    <li><a href="#">바오밥컬렉션</a></li>
+                                    <li><a href="#">럭키보이선데이</a></li>
+                                    <li><a href="#">아르테미데</a></li>
+                                </ul>
+                                <!-- /2depth -->
+                            </li>
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">NEW</a></li>
+                            <li>
+                                <a href="#">CEILING FAN</a>
+                                <ul class="sub_menu_menu">
+                                    <li><a href="#">Lucci Air</a></li>
+                                    <li><a href="#">Maison de<br>concept</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FURNITURE</a></li>
+                            <li><a href="#">LIGHTNING</a></li>
+                            <li><a href="#">HOME DECO</a></li>
+                            <li><a href="#">MAGAZIEN</a></li>
+                            <li><a href="#">STORE</a></li>
+                            <li><a href="#">COMMUNITY</a></li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- 헤더영역 끝 -->
+        <!-- 섹션영역 시작 -->
+        <section>
+            <div class="sec1 w1240">
+                <img src="./images/메인이미지큰거1.jpg" alt="메인이미지1">
+                <img src="./images/메인이미지큰거2.jpg" alt="메인이미지2">
+            </div>
+        </section>
+        <section>
+            <div class="sec2 w1240">
+                <h2>Interior Object</h2>
+            </div>
+            <p class="w1240">
+                46 <strong>ITEMS IN THIS CATEGORY.</strong>
+            </p>
+        </section>
+    </div>
+</body>
+</html>

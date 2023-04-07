@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초 float 레이아웃2 | 플롯해제방법 clear:both</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        #wrap{
+            width: 600px;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 2rem;
+            height: 80px;
+            text-align: center;
+            color: #fff;
+            background-color: #0d0d0d;
+        }
+        h2{
+            text-align: justify;
+        }
+        .box1{
+            width: 300px;
+            padding: 15px;
+            background-color: #a173bf;
+            /* 플롯 */
+            float: left;
+        }
+        .box2{
+            padding: 15px;
+            background-color: #eaf205;
+            width: 300px;
+            /* 플롯 */
+            float: right;
+        }
+        .box3{
+            padding: 15px;
+            background-color: #f25244;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>기초 플롯 레이아웃</h1>
+        <!-- section.box$*3 -->
+        <section class="box1">
+            <h2>
+                문제는 녹스 센서의 이상이 자칫 큰 사고로 이어질 수 있다는 겁니다. 센서가 망가지면 공해 물질이 다량 뿜어져 나오고 그 결과, 달리던 차량의
+                엔진이 이상을 감지하며 멈춰 설 수 있기 때문입니다. 제조사인 벤츠 측은 어느 회사 차량에서든 운전자의 주행 습관 등 다양한 요인이 겹치면 녹스
+                센서에 문제가 생길 수 있다면서, 차량에 결함이 있는 건 아니라고 선을 그었습니다. 그러나 함께 차량을 살펴본 전문가는 벤츠 측과는 다른
+                이야기를 합니다. 녹스 센서와 에어컨 물이 빠지는 호스가 너무 가깝게 붙어 있다며 차량 설계부터 잘못됐을 가능성을 제기합니다.
+            </h2>
+        </section>
+        <section class="box2">
+            <h2>
+                문제는 녹스 센서의 이상이 자칫 큰 사고로 이어질 수 있다는 겁니다. 센서가 망가지면 공해 물질이 다량 뿜어져 나오고 그 결과, 달리던 차량의
+                엔진이 이상을 감지하며 멈춰 설 수 있기 때문입니다. 제조사인 벤츠 측은 어느 회사 차량에서든 운전자의 주행 습관 등 다양한 요인이 겹치면 녹스
+                센서에 문제가 생길 수 있다면서, 차량에 결함이 있는 건 아니라고 선을 그었습니다. 그러나 함께 차량을 살펴본 전문가는 벤츠 측과는 다른
+                이야기를 합니다. 녹스 센서와 에어컨 물이 빠지는 호스가 너무 가깝게 붙어 있다며 차량 설계부터 잘못됐을 가능성을 제기합니다.
+            </h2>
+        </section>
+        <section class="box3">
+            <h2>
+                문제는 녹스 센서의 이상이 자칫 큰 사고로 이어질 수 있다는 겁니다. 센서가 망가지면 공해 물질이 다량 뿜어져 나오고 그 결과, 달리던 차량의
+                엔진이 이상을 감지하며 멈춰 설 수 있기 때문입니다. 제조사인 벤츠 측은 어느 회사 차량에서든 운전자의 주행 습관 등 다양한 요인이 겹치면 녹스
+                센서에 문제가 생길 수 있다면서, 차량에 결함이 있는 건 아니라고 선을 그었습니다. 그러나 함께 차량을 살펴본 전문가는 벤츠 측과는 다른
+                이야기를 합니다. 녹스 센서와 에어컨 물이 빠지는 호스가 너무 가깝게 붙어 있다며 차량 설계부터 잘못됐을 가능성을 제기합니다.
+            </h2>
+        </section>
+    </div>
+</body>
+</html>

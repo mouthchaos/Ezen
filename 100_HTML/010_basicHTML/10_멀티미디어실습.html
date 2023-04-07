@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비디오 삽입 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        video{
+            width: 100%;
+        }
+        figcaption{
+            color:red;
+            text-align: center;
+            font-size:x-large;
+            background-color: rgb(66, 192, 192);
+            font-weight: bold;
+        }
+        #wrap{
+            margin: 0 auto;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <figure>
+            <figcaption>first.mp4</figcaption>
+            <video src="./media/media/Painting.mp4" muted autoplay loop controls></video><br>
+            <figcaption>Second MP4</figcaption>
+            <video src="./media/media/cars.mp4" muted autoplay loop controls></video>
+        </figure>
+    </div>
+</body>
+</html>

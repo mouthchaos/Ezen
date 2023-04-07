@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrap h1{
+            background-color: rgb(199, 226, 223);
+            width: 250px;
+            float: left;
+        }
+        #wrap nav{
+            background-color: red;
+            width: 250px;
+            float:left
+        }
+        #wrap nav li{
+            font-weight: bold;
+        }
+        #wrap nav p{
+            background-color: skyblue;
+            width: 250px;
+        }
+
+        #wrap header:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #content{
+            text-align: center;
+        }
+        #content::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+       .con1{
+        background-color: rgb(199, 226, 223);
+        width: 350px;
+        height: 600px;
+        float: left;
+       }
+       .con2{
+        background-color: green;
+        width: 650px;
+        height: 600px;
+        float: left;
+       }
+       footer h2{
+        background-color: yellow;
+        padding: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>로고</h1>
+            <nav class="gnb">
+                <li><a href="#">GNB</a></li>
+                <li><a href="#">유틸리티메뉴</a></li>
+                <li><a href="#">검색창</a></li>
+            </nav>
+            <p>퀵메뉴</p>
+        </header>
+        <main role="main">
+            <section id="content">
+                <div class="con1">
+                    <p>
+                        LNB
+                    </p>
+                </div>
+                <div class="con2">
+                    <p>
+                        콘텐츠내용들
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h2>하단메뉴,주소,저작권</h1>
+        </footer>
+    </div>
+</body>
+</html>

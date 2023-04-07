@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        main::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        header{
+            height: 80px;
+            line-height: 80px;
+        }
+        header h1{
+            background-color: yellow;
+            width: 300px;
+            float: left;
+        }
+        header p{
+            background-color: silver;
+        }
+        .aa_1 h2{
+            background-color: gray;
+            width: 500px;
+            float:left;
+            height: 80px;
+            line-height: 80px;
+        }
+        .aa_1 p{
+            background-color: green;
+            width: 500px;
+            float: left;
+            height: 80px;
+            line-height: 80px;
+        }
+        .aa_2 h2{
+            background-color: red;
+            width: 300px;
+            float: left;
+            height: 80px;
+            line-height: 80px;
+        }
+        .aa_2 p{
+            background-color: rgb(54, 116, 39);
+            width: 500px;
+            float: left;
+            height: 80px;
+            line-height: 80px;
+        }
+        .aa_2 p+p{
+            background-color: blue;
+            width: 200px;
+            float: left;
+            height: 80px;
+            line-height: 80px;
+        }
+        footer{
+            background-color: yellow;
+            height: 80px;
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>로고영역</h1>
+            <p>GNB영역</p>
+        </header>
+        <main role="main">
+            <section class="aa_1">
+                <h2>
+                    슬라이드왼쪽
+                </h2>
+                <p>
+                    슬라이드오른쪽
+                </p>
+            </section>
+            <section class="aa_2">
+                <h2>
+                    섹션왼쪽
+                </h2>
+                <p>
+                    섹션 가운데
+                </p>
+                <p>
+                    섹션 오른쪽
+                </p>
+            </section>
+        </main>
+        <footer>
+            <h2>
+                하단 메뉴
+            </h2>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리, 효과 메서드 실습</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <style>
+        button{
+            padding: 20px;
+            background-color: darkgray;
+            border: none;
+            outline: none;
+            color: #000;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        img{
+            /* hide랑 같은것 */
+            display: none;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('button').eq(0).click(function(){
+                $('p>img').fadeOut(1000);
+            });
+            $('button').eq(1).click(function(){
+                $('p>img').fadeIn(1000);
+            });
+            $('button').eq(2).click(function(){
+                $('p>img').fadeToggle(1000);
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <button>fadeOut</button>
+    <button>fadeIn</button>
+    <button>fadeToggle</button>
+    <p>
+        <img src="./images/j1.400.jpg" alt="짱구이미지효과">
+    </p>
+</body>
+</html>

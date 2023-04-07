@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            width: 1000px;
+            height: 1000px;
+            font-size: 14px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        header h2{
+            width: 200px;
+            height: 150px;
+            line-height: 150px;
+            background-color: red;
+        }
+        header nav{
+            width: 800px;
+            height: 100px;
+            line-height: 100px;
+            background-color: red;
+        }
+        #main div:nth-child(1){background-color: skyblue;}
+        #main div:nth-child(2){background-color: yellow;}
+        #main div:nth-child(3){background-color: green;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더영역 -->
+        <header>
+            <h2>FLEXIBLE BOX</h2>
+            <nav>GNB메뉴</nav>
+        </header>
+        <!-- 헤더영역 끝 -->
+        <!-- 메인 -->
+        <main role="main">
+            <section>
+                <div>
+                    슬라이드영역
+                </div>
+                <div>
+                    갤러리
+                </div>
+                <div>
+                    인기검색어
+                </div>
+            </section>
+            <div id="text">
+                <article class="t1">
+                    <div>
+                        최근글
+                    </div>
+                    <div>
+                        인기글    
+                    </div>
+                </article>
+                <article class="t2">
+                    <div>
+                        베너1
+                    </div>
+                    <div>
+                        베너2
+                    </div>
+                </article>
+                <aside>
+                    <div>
+                        소셜 네트워크
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <!-- 메인 끝 -->
+        <!-- 푸터영역 -->
+        <footer>
+            <div>
+                푸터
+            </div>
+        </footer>
+        <!-- 푸터영역 끝 -->
+    </div>
+</body>
+</html>

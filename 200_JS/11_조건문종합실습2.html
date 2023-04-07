@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 종합실습</title>
+    <link rel="stylesheet" href="./css/css/font.css">
+    <link rel="stylesheet" href="./css/css/reset.css">
+    <script>
+        // A. 삼항조건연산자
+        // 실습1
+        // var name = name(prompt('이름','정성훈'));
+        // var tall = tall(prompt('신장','180cm'));
+        // var kg = kg(prompt('몸무게','100kg'));
+        // var avg = (tall-100)*0.9;
+        // var avg1 = avg>kg?'';
+        // 답
+        var name = prompt('당신의 이름은?','정성훈');
+        var tall = Number(prompt('당신의 키는?',180));
+        var weight = Number(prompt('당신의 몸무게는?',100));
+        var data = (tall-100)*0.9;
+        // 적정몸무게 계산
+        console.log('적정몸무게 : ' + data);
+        // 조건 결과값 할당
+        var result = weight>=data;
+        console.log('조건 결과값 : ' + result);
+        result?document.write(name+'님 건강을 위해 체중관리 요망<br>'):document.write(name+'님 건강관리 잘 하셨네요<br>');
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

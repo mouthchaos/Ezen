@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트기본레이아웃실습</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+        }
+        header:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        header{
+            height: 100px;
+            line-height: 100px;
+        }
+        header h1{
+            width: 200px;
+            background-color: skyblue;
+            float: left;
+        }
+        header nav{
+            width: 800px;
+            background-color: red;
+            float: left;
+        }
+        header nav li{
+            margin: 0 20px;
+            float: left;
+        }
+        #main_1:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        #main_1 section{
+            height: 600px;
+            line-height: 600px;
+        }
+        .lnb{
+            width: 350px;
+            background-color: skyblue;
+            float: left;
+        }
+        .contents{
+            width: 650px;
+            background-color: green;
+            float:left;
+        }
+        footer{
+            height: 100px;
+            line-height: 100px;
+            background-color: yellow;
+        }
+        aside{
+            width: 100px;
+            height: 200px;
+            line-height: 200px;
+            background-color: skyblue;
+            position: absolute;
+            right: -100px;
+            top: 0;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>로고</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">GNB</a></li>
+                    <li><a href="#">유틸리티메뉴</a></li>
+                    <li><a href="#">검색창</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <section id="main_1">
+                <section class="lnb">
+                    LNB
+                </section>
+                <section class="contents">
+                    콘텐츠내용들
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>
+                하단메뉴, 주소, 저작권
+            </p>
+        </footer>
+        <aside>
+            퀵메뉴
+        </aside>
+    </div>
+</body>
+</html>

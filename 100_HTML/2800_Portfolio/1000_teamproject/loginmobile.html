@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            width: 480px;
+            margin: 0 auto;
+        }
+
+        /* login */
+        .login{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            padding: 12px 0;
+            border-top: 1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .login h2{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .login img{
+            width: 8px;
+            height: 12px;
+        }
+
+
+        .container{
+            background-color: #979797;
+        }
+
+        /* keyboard */
+        .keyboard{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            font-size: 12px;
+        }
+        .ip{
+            background-color: #fff;
+            margin: 0 16px;
+            padding: 0 0 0 7px;
+        }
+        .ip input{
+            height: 40px;
+        }
+        .ip input:nth-child(1){
+            border-bottom: 1px solid #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <form action="post">
+        <!-- login 시작-->
+        <div class="login">
+            <img src="./images/arrow1_1.png" alt="꺽1">
+            <h2>로그인</h2>
+            <div></div>
+        </div>
+        <!-- login 끝-->
+        <div class="container">
+        <!-- keyboard 시작 -->
+            <div class="keyboard">
+                <div>가상키보드<img src="" alt="자판"></div>
+            </div>
+        <!-- keyboard 끝 -->
+            <!-- 아이디,비밀번호 시작-->
+                <div class="ip">
+                    <input type="text" name="user_id" placeholder="아이디">
+                    <input type="text" name="user_pw" placeholder="패스워드">
+                </div>
+            <!-- 아이디,비밀번호 끝-->
+        </div>
+    </form>
+</body>
+</html>

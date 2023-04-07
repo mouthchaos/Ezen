@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리, 이벤트 기본속성 제거</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- 1. 제이쿼리 코어파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 2. 제이쿼리 CDN 방식이용 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body {
+            width: 3000px;
+            height: 5000px;
+        }
+        #wrap {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            z-index: 1;
+            background-color: red;
+        }
+    </style>
+    <!-- $(객체).ready(익명함수) -->
+    <script>
+        $(document).ready(function(){
+            $(window).on('scroll',function(){
+                var scrT = $(this).scrollTop();
+                var scrL = $(this).scrollLeft();
+                // console.log("스크롤탑 값 : "+scrT);
+                // console.log("스크롤레프트 값 : "+scrL);
+                $('.top').text(scrT);
+                $('.left').text(scrL);
+            })
+        });
+
+        // 연습
+        // 스크롤을 움직이면 텍스트가 가로세로에 맞춰서 픽셀값이 변하게 세팅
+        
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <h2>SCROLL</h2>
+        <p>
+            scrollTop : <span class="top">0</span>px
+            <br><br><br>
+            scrollLeft : <span class="left">0</span>px
+        </p>
+    </div>
+</body>
+</html>

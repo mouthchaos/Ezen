@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 호출 참조</title>
+    <script>
+        // 버튼을 클릭했을때 이벤트 리스너를 이용하여 (기능)경고창 = 준비완료!!
+        // 소스캡쳐, 캡쳐넘버링
+
+        // 내가한거
+        // var b1 = document.getElementById("button");
+
+        // function button1(){
+        //     alert("준비완료!!");
+        // }
+
+        // b1.addEventListener("click",button1);
+
+        // 답
+        window.onload = function(){
+            // 1. DOM 선택
+            var btn = document.getElementById("button");
+            // 3. 이벤트 연결
+            btn.onclick = alt;
+            
+        }
+        // 2. 리스너 작성
+        function alt(){
+            alert("준비완료!!");
+        }
+
+    </script>
+</head>
+<body>
+    <button id="button">버튼</button>
+</body>
+</html>

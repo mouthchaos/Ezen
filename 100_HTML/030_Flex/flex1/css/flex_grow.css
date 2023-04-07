@@ -1,0 +1,100 @@
+@charset "utf-8";
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#container{
+    width: 100%;
+}
+header{
+    width: 100%;
+}
+header h1{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 12px 0;
+    text-shadow: 0 0 3px #666;
+}
+#menus{
+    width: 100%;
+}
+#menus>div{
+    height: 400px;
+    border: 1px solid #000;
+    margin-bottom: 16px;
+    /* 위치기준값 */
+    position: relative;
+}
+#menus h2{
+    /* 포지션 */
+    position: absolute;
+    right: 3%;
+    bottom: 10px;
+    z-index: 1;
+    padding: 5px;
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 3px 3px 5px black;
+}
+#menus1,
+#menus2,
+#menus3,
+#menus4,
+#menus5{
+    width: 100%;
+}
+#menus1{
+    background-image: url(../images/flex1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#menus1{
+    background: url(../images/flex1.jpg) no-repeat center;
+}
+#menus2{
+    background: url(../images/flex2.jpg) no-repeat center;
+}
+#menus3{
+    background: url(../images/flex3.jpg) no-repeat center;
+}
+#menus4{
+    background: url(../images/flex4.jpg) no-repeat center;
+}
+#menus5{
+    background: url(../images/flex5.jpg) no-repeat center;
+}
+footer{
+    width: 100%;
+    background: #373737;
+    height: 80px;
+}
+footer p{
+    font-size: 1.2rem;
+    color: #eee;
+    text-align: center;
+    line-height: 80px;
+}
+
+/* 플렉스 */
+#menus{
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+}
+#menus1,
+#menus2,
+#menus3,
+#menus4,
+#menus5{
+    width: 33.33%;
+}
+
+/* flex 속성 적용 */
+#menus5{
+    /* flex: [flow-grow] [flow-shrink] [flex-basis] */
+    /* 기본크기의 2배 만들기 */
+    flex: 2 2 0;
+}

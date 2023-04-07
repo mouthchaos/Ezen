@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="seonghun" content="seonghun">
+    <meta name="dsecription" content="포트폴리오, 박스기능설명">
+    <title>Portfolio, RWD Template</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon/짱구시네마파비.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favsh180.png">
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/rwd_template1.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- 페이지 JS -->
+    <script src="./js/rwd_template.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu_toggle_btn').click(function(){
+                $('.gnb').stop().slideToggle();
+            });
+        });
+        $(function(){
+            $('.slide_gallery').bxSlider({
+                mode: 'fade',
+                pager: 'true',
+                slideWidth: 1920,
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- Header -->
+        <div class="header cf">
+            <!-- Logo -->
+            <h1 class="logo"><a href="#">떡잎시네마</a></h1>
+            <!-- /Logo -->
+            <!-- GNB -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">에피소드</a></li>
+                    <li><a href="#">극장판</a></li>
+                    <li><a href="#">예약하기</a></li>
+                    <li><a href="#">스토어</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </nav>
+            <!-- /GNB -->
+            <!-- Hamberger Toggle -->
+            <span class="menu_toggle_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <!-- /Hamberger Toggle -->
+        </div>
+        <!-- /Header -->
+
+        <!-- 2.Slider -->
+        <!-- <article class="slider">
+           <h2 class="slider_img">
+                <img src="./images/p_images/짱구-컴퓨터-배경화면1440520.png" alt="슬라이드 이미지">
+           </h2>
+        </article> -->
+        <!-- /2.Slider -->
+
+        <!-- 2-1. boxSlider -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li><img src="./images/img_bxSlider/짱구배경화면1_h500.jpg" alt="슬라이드01"></li>
+                    <li><img src="./images/img_bxSlider/짱구배경화면2_h500.jpg" alt="슬라이드02"></li>
+                    <li><img src="./images/img_bxSlider/짱구배경화면3_h500.jpg" alt="슬라이드03"></li>
+                </ul>
+            </div>
+        </article>    
+        <!-- /2-1. boxSlider -->
+
+        <!-- 3. Contents -->
+        <main role="main">
+            <section class="content">
+                <!-- 3-1. Display -->
+                <section class="display_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">에피소드</h2>
+                        <p class="desc">
+                            짱구네 집은 오늘도 평범하지만 신나는 하루!! 예쁜 누나와 초코비를 좋아하는 5살 짱구와 살인적인 발냄새를 가진 아버지 그리고 세일과 미남을 <br>
+                            좋아하는 엄마, 귀여운 여동생 짱아와 강아지 흰둥이와 함께 행복한 나날을 보내고 있다.
+                        </p>
+                    </div>
+                </section>  
+                <!-- /3-1. Display -->
+    
+                <!-- 3-2. Promotion -->
+                <section class="promotion_section container">
+                    <h2>
+                        <ul class="promotion_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구에피소드1_52.png" alt="짱구에피소드01">
+                                    <h3>Ep.1&nbsp;&nbsp;1~13</h3>
+                                    <p>
+                                        하나 남은 떡을 두고 싸우다가 소녀의 웃는 얼굴을 마지막으로 짱구 가족은 기억을 잃고 기차로 돌아오며 왜 입가에 떡 자국이 묻어있고 배가 부른지
+                                        어리둥절 하다 에피소드가 끝난다.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구에피소드2_52.png" alt="짱구에피소드02">
+                                    <h3>Ep.2&nbsp;&nbsp;1~13</h3>
+                                    <p>
+                                        떡잎마을방범대가 계단 위쪽을 쳐다보자마자 훈이 엄마가 이불을 껴안고 나왔고, 유령이라고 생각한 떡잎마을방범대는 그대로 도망치게 되고, 그대로
+                                        에피소드가 끝난다.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구에피소드3_52.png" alt="짱구에피소드03">
+                                    <h3>Ep.3&nbsp;&nbsp;1~13</h3>
+                                    <p>
+                                        아이들이 집에 간후, 차은주 선생님이 꽃 심는 도중에 그 크레용을 발견하고, 이를 크레용을 모아둔 통에 넣었다. 다시 깨어난 인면 크레용을
+                                        비추는 것으로 에피소드는 끝이 난다.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구에피소드4_52.png" alt="짱구에피소드04">
+                                    <h3>Ep.4&nbsp;&nbsp;1~13</h3>
+                                    <p>
+                                        포기하지 않고 언젠가 반드시 타임루프의 문을 찾아서
+                                        바꿔주겠다는 또 하나의 철수의 목소리와 매일 같은 일을 반복하는 당신은 진짜 당신이냐는 원장선생님의 물음으로 에피소드는 끝난다.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </h2>
+                </section>
+                <!-- /3-2. Promotion -->
+                    
+                <hr class="divider">
+                    
+                <!-- 3-3. Work -->
+                <section class="work_section">
+                    <div>
+                        <h2 class="sec_title container">극장판</h2>
+                        <ul class="work_list cf">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 1기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판1_360.jpg" alt="포트폴리오1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 2기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판2_360.jpg" alt="포트폴리오2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 3기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판3_360.jpg" alt="포트폴리오3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 4기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판4_360.jpg" alt="포트폴리오4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 5기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판5_360.jpg" alt="포트폴리오5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 6기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판6_360.jpg" alt="포트폴리오6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 7기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판7_360.jpg" alt="포트폴리오7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>짱구는못말려 극장판 8기</h3>
+                                        <span>우스이 요시토</span>
+                                    </div>
+                                    <img src="./images/p_images/짱구극장판8_360.jpg" alt="포트폴리오8">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-3. Work -->
+    
+                <hr class="m_divider">
+    
+                <!-- 3-4. Blog -->
+                <section class="blog_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">스토어</h2>
+                        <ul class="blog_list cf">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구먹거리1_268.jpg" alt="짱구먹거리 01">
+                                </a>
+                                <time datetime="1982-03-01">Mar 27,2023</time>
+                                <a href="#">
+                                    <h3>
+                                        인도 정통 마살라 커리로가 담겨있는 간단조리가 가능한 맛있는 한끼식사.
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구먹거리2_268.png" alt="짱구먹거리 02">
+                                </a>
+                                <time datetime="1982-03-15">Jan 10,2020</time>
+                                <a href="#">
+                                    <h3>
+                                        짱구가 밥대신 즐겨먹는 리얼초코비! 바삭한 식감과 달콤한 초콜릿의 조화.
+                                    </h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/p_images/짱구먹거리3_268.jpg" alt="짱구먹거리 03">
+                                </a>
+                                <time datetime="1982-03-20">Feb 11,1973</time>
+                                <a href="#">
+                                    <h3>
+                                        1973년 삼양에서 원조 짱구 출시. 우리가 주로 먹던 짱구류에 비하면 덜 달고 계피맛이 있어 바삭하고 맛있다.
+                                    </h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-4. Blog -->
+    
+                <!-- 3-5. Contact -->
+                <section class="contact_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">예약하기</h2>
+                        <form action="#" class="form_box">
+                            <fieldset class="cf">
+                                <legend class="blind">CONTACT&nbsp;US</legend>
+                                <!-- Input Form -->
+                                <div class="form">
+                                    <label for="name" class="blind">Name</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <label for="phone" class="blind">Phone</label>
+                                    <input type="tel" id="phone" placeholder="Phone">
+                                    <label for="email" class="blind">E-Mail</label>
+                                    <input type="email" id="email" placeholder="Email Address">
+                                </div>
+                                <!-- /Input Form -->
+                                <!-- Textarea Form -->
+                                <div class="txta">
+                                    <label for="message" class="blind">Message</label>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                                <!-- /Textarea Form -->
+                            </fieldset>
+                            <!-- Button -->
+                            <div class="send_btn">
+                                <button>SEND MESSAGE</button>
+                            </div>
+                            <!-- /Button -->
+                        </form>
+                    </div>
+                </section>
+                <!-- /3-5. Contact -->
+            </section>
+        </main>
+        <!-- /3. Contents -->
+        <!-- 4. Footer -->
+        <footer class="footer">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123439.8608545132!2d126.95413245922822!3d37.58458183178866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca330ed83f255%3A0x5c9a471aea4bc1ed!2zQXBwbGUg66qF64-Z!5e1!3m2!1sko!2skr!4v1676943377809!5m2!1sko!2skr"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <p>
+                COPYRIGHT ALL RIGHTS RESERVED., <span>WEBADD</span>
+            </p>
+        </footer>
+        <!-- /4. Footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 링크이미지 아이콘 -->
+    <link rel="shortcut icon" href="./images/Untitled-1.png">
+    <title>롤렉스</title>
+    <style>
+        #wrap{
+            width: 1600px;
+            height: 900px;
+            margin: 40px auto;
+            border: 1px solid #000;
+            padding: 30px;
+        }
+
+
+        /* 헤더영역 */
+        /* 플롯해제 */
+        header::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        header{
+            height: 150px;
+        }
+        header h1{
+            font-size: 40px;
+            font-weight: bold;
+            /* 플롯 */
+            float: left;
+        }
+        header ul{
+            line-height: 10px;
+            /* 플롯 */
+            float: right;
+        }
+        header ul li{
+            font-size: 20px;
+            margin-left: 10px;
+            /* 플롯 */
+            float: left;
+        }
+
+
+
+
+        /* 섹션영역 */
+        /* 플롯해제 */
+        section::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        section{
+            height: 600px;
+            font-family: 'Noto Sans KR',sans-serif;
+        }
+        .sec_left{
+            width: 800px;
+            /* 플롯 */
+            float: left;
+            /* 포지션 위치기준값 */
+            position: relative;
+        }
+        .sec_left img{
+            /* 포지션 */
+            position: absolute;
+            left: 200px;
+            top: 0;
+            z-index: 1;
+        }
+        .sec_right{
+            width: 800px;
+            /* 플롯 */
+            float: right;
+        }
+        .sec_right h1{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .sec_right h2{
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-top: 60px;
+            
+        }   
+        .sec_right h2 a:hover{
+            color: aqua;
+        }
+        .sec_right h3{
+            font-size: 25px;
+            line-height: 1.2;
+            margin-top: 100px;
+        }
+        .sec_right h3 span{
+            color: silver;
+        }
+        .sec_right h3 img{  
+            margin-right: 20px;
+        }
+        .sec_right h4{
+            line-height: 1.5;
+            margin-top: 60px;
+        }
+        .sec_right h4 span{
+            color: silver;
+        }
+
+
+
+        /* 푸터영역 */
+        footer p{ 
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>JEONGSEONGHUN</h1>
+            <ul>
+                <li>
+                    mouthchaos
+                </li>
+                <li>
+                    <img src="./images/icon_X.png" alt="x표시">
+                </li>
+            </ul>
+        </header>
+        <!-- 헤더영역 끝 -->
+        <!-- 섹션영역 시작 -->
+        <section>
+            <div class="sec_left">  
+                <img src="./images/jjangunuggi.jpg" alt="짱구누끼">
+            </div>
+            <div class="sec_right">
+                <h1>JJANG GU</h1>
+                <h2>
+                    mouthchaos <br>
+                    <a href="#">http://mouthchaos.kr</a>
+                </h2>
+                <h3>
+                    <span>TEL</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010.6684.8926 <br><br>
+                    <span>MAIL</span>&nbsp;&nbsp;&nbsp;mouthchaos@naver.com <br><br>
+                    <a href="#"><img src="./images/icon_facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/icon_twitter.png" alt="트위터"></a>
+                    <a href="#"><img src="./images/icon_insta.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/icon_naver.png" alt="네이버"></a>
+                </h3>
+                <h4>
+                    FRONT-END <span>: HTML | CSS | JAVASCRIPT | JQUERY | REACT</span> <br>
+                    BACK-END <span>: JAVA | SERVLET | JSP | ORACLE</span>
+                </h4>
+            </div>            
+        </section>
+        <!-- 섹션영역 끝 -->
+        <!-- 푸터영역 시작 -->
+        <footer>
+            <p>
+                COPYRIGHT 2023 WEBADD ALL RIGHTS RESERVED
+            </p>
+        </footer>
+        <!-- 푸터영역 끝 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            width: 1000px;
+            height: 1000px;
+        }
+        #wrap{
+            margin: 0 auto;
+            text-align: center;
+        }
+        header{
+            height: 750px;
+            display: flex;
+            flex-flow: row wrap; 
+        }
+        .head1{
+            width: 10%;
+            height: 10%;
+            background-color: rgb(226, 29, 22);
+            
+        }
+        .gnb{
+            background-color: rgb(226, 29, 22)
+        }
+        .head2{
+            width: 40%;
+            height: 40%;
+        }
+        .h21{
+            height: 100%;
+            background-color: skyblue;
+        }
+        .h22{   
+            background-color: yellow;
+        }
+        .h23{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="head1">
+                <p>FLEXIBLE BOX</p>
+            </div>
+            <div class="gnb">
+                <p><a href="#">GNB메뉴</a></p>
+            </div>
+            <div class="head2">
+                <p class="h21">
+                    슬라이드 영역
+                </p>
+                <p class="h22">
+                    갤러리
+                </p>
+                <p class="h23">
+                    인기검색어
+                </p>
+            </div>
+        </header>
+        <main role="main">
+            <section class="sec123">
+                <div class="sec1">
+                    <p>최근글</p>
+                    <p>인기글</p>                         
+                </div>
+                <div class="sec2">
+                    <p>베너1</p> 
+                    <p>베너2</p>                          
+                </div>
+                <div class="sec3">
+                    <p>소셜네트워크</p>                        
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>푸터</p>
+        </footer>
+    </div>
+</body>
+</html>

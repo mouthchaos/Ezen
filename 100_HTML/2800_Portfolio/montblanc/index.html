@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 기본 코딩 JS 파일 -->
+    <link rel="stylesheet" href="./js/jquery-1.12.4.min.js">
+    <link rel="stylesheet" href="./js/jquery-3.3.1.min.js">
+    <link rel="stylesheet" href="./js/jquery-3.4.1.min.js">
+    <link rel="stylesheet" href="./js/prefixfree.min.js">
+    <!-- 링크 이미지 -->
+    <link rel="shortcut icon" href="./images/favsh32.png">
+    <title>몽블랑 시안작업</title>
+    <style>
+        /* 위드값 1280고정 */
+        .w1280{
+            width: 1280px;
+            margin: 0 auto;
+        }
+        body{
+            width: 100%;
+            margin: 0 auto;
+        }
+        /* 헤더영역 CSS */
+        .head1{
+            background: center no-repeat url('./images/images\ \(3\)/slide_back_img.png');
+            height: 700px;
+            padding-top: 40px;
+        }
+        .head1_1{
+            margin-bottom: 200px;
+        }
+        .head1_1 h1{
+            width: 100px;
+            /* 플롯 */
+            float: left;
+        }
+        .head1_1 nav{
+            width: 1000px;
+            padding-left: 400px;
+            /* 플롯 */
+            float: left;
+        }
+        .head1_1 h2{
+            width: 180px;
+            /* 플롯 */
+            float: right;
+        }
+        nav ul li{
+            color: silver;
+            font-size: 15px;
+            margin-left: 10px;
+            padding-top: 10px;
+            
+            /* 플롯 */
+            float: left;
+        }
+        nav ul li a:hover{
+            color: yellow;
+        }
+        nav ul li span{
+            color: white;
+        }
+        .head2{
+            background-color: gray; 
+        }
+        .head1_2 h3,h4{
+            color: white;
+            font-size: 57px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            margin-left: 48px;
+        }
+        .head1_2 h4{
+            margin-bottom: 40px;
+        }
+        .head1_2 p{
+            color: silver;
+            font-size: 11px;
+            margin-bottom: 10px;
+            margin-left: 48px;
+        }
+        .head1_2 input{
+            background-color: yellow;
+            width: 150px;
+            height: 48px;
+            margin-left: 48px;
+        }
+        .head2_1 img{
+            /* 포지션 */
+            position: relative;
+            left: 0px;
+            top: -50px;
+            z-index: 1;
+            padding-right: 20px;
+        }
+        .head2_1 .img1{
+
+        }
+
+        .head2_2 p{
+            color: silver;
+        }
+        .head2_2 p span{
+            color: black;
+            font-weight: bold;
+        }
+        .head2_2 p:nth-child(1){
+            width: 640px;
+            height: 100px;
+            line-height: 100px;
+            /* 플롯 */
+            float: left;
+        }
+        .head2_2 p:nth-child(2){
+            width: 640px;
+            height: 100px;
+            line-height: 100px;
+            padding-left: 410px;       
+            /* 플롯 */
+            float: left;
+        }
+
+
+        /* 섹션영역 CSS */
+        .sec1{
+            text-align: center;
+            color: gray;
+            padding: 20px;
+        }
+        .sec1 p{
+            margin-bottom: 30px;
+        }
+        
+
+        .sec4{
+            /* 포지션 */
+            position: relative;
+            left: 110px;
+            bottom: 260px;
+            z-index: 1;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* 푸터영역 CSS */
+        footer{
+            background-color: black;
+            height: 550px;
+        }
+        
+        .foot1_1{
+            width: 380px;
+            /* 플롯 */  
+            float: left;
+            /* 포지션 */
+            position: relative;
+            left: 0;
+            top: 130px;
+            z-index: 1;
+        }
+        .foot1_1 img:nth-child(1){
+            margin-bottom: 20px;
+        }
+        .foot1_1 img:nth-child(2),
+        .foot1_1 img:nth-child(3),
+        .foot1_1 img:nth-child(4),
+        .foot1_1 img:nth-child(5)
+        {
+            width: 30px;
+            height: 30px;
+        }
+        .foot1_1 p{
+            margin-bottom: 12px;
+        }
+        .foot1_2{
+            width: 300px;
+            /* 플롯 */
+            float: left;
+        }
+        .foot1_3{
+            width: 300px;
+            /* 플롯 */
+            float: left;
+        }
+        .foot1_4{
+            width: 300px;
+            /* 플롯 */
+            float: left;
+        }
+        .foot1_1 p{
+            color: silver;
+            font-size: 15px;
+            
+        }
+        .menu{
+            position: relative;
+            left: 0;
+            top: 130px;
+            z-index: 1;
+        }
+        .menu dt{
+            color: white;
+            font-size: 17px;
+            margin-bottom: 32px;
+        }
+        .menu dd{
+            color: silver;
+            margin-bottom: 18px;
+        }
+        .foot2{
+            width: 500px;
+            color: white;
+            text-align: center;
+            /* 포지션 */
+            position: relative;
+            left: 0;
+            top: 230px;
+            z-index: 1;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- 헤더영역시작 -->
+    <header>
+        <div class="head1">
+            <div class="head1_1 w1280 cf">
+                <h1><img src="./images/images (3)/logo.png" alt="몽블랑로고"></h1>
+                <h2><img src="./images/images (3)/btn_search.png" alt="돋보기"></h2>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span>WOMAN</span></a></li>
+                        <li><a href="#">MEN</a></li>
+                        <li><a href="#">CHIDREN</a></li>
+                        <li><a href="#">JEWELRY & WATCHES</a></li>
+                        <li><a href="#">BEAUTY</a></li>
+                        <li><a href="#">DECOR</a></li>
+                        <li><a href="#">GIFTS</a></li>
+                        <li><a href="#">STORIES</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="head1_2 w1280">
+                <h3>
+                    Father's Day Gifts
+                </h3>
+                <h4>
+                    Le Petit Prince
+                </h4>
+                <p>
+                    Receive a complimentary Explorer Travel Set with your purchase of $400 or more.
+                </p>
+                <p>
+                    Browse the collection
+                </p>
+                <input type="button" value="SHOP NOW">
+            </div>
+        </div>
+        <div class="head2">
+            <div class="head2_1 w1280">
+                <img src="./images/images (3)/card_box01.jpg" alt="이미지1" class="img1">
+                <img src="./images/images (3)/card_box02.jpg" alt="이미지2" class="img2">
+                <img src="./images/images (3)/card_box03.jpg" alt="이미지2" class="img3">
+            </div>
+            <div class="head2_2 w1280 cf">
+                <p>
+                    please call our concierge on <span>1-1800-995-4810</span>
+                </p>
+                <p>
+                    <a href="">VIEW ALL SERVICES</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- 헤더영역끝 -->
+    <!-- 섹션영역시작 -->
+    <section class="sec1 w1280">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis architecto officia quod ex dolorum p
+        </p>
+        <p>
+            sit amet consectetur adipisicing elit. Deleniti perferendis architecto officia quod ex
+        </p>
+        <p>
+            consectetur adipisicing elit. Deleniti perferendis architecto officia 
+        </p>
+    </section>
+    <section class="sec2 w1280">
+        <div>
+            <img src="./images/images (3)/aboutus.jpg" alt="어바웃어스">
+        </div>
+    </section>
+    <section class="sec3">
+        <div>
+            <img src="./images/images (3)/mov_back.jpg" alt="mov이미지1">
+        </div>
+    </section>
+    <section>
+        <div class="sec4 w1280">
+            <img src="./images/images (3)/mov_clip.jpg" alt="mov이미지2">
+        </div>
+    </section>
+    <section class="sec5 w1280">
+        <div>
+            <img src="./images/images (3)/why.jpg" alt="와이">
+        </div>
+    </section>
+    <section class="sec6 w1280">
+        <div>
+            <img src="./images/images (3)/faq.jpg" alt="faq">
+        </div>
+    </section>
+    <section class="sec7 w1280">
+        <div>
+            <img src="./images/images (3)/banner.jpg" alt="배너">
+        </div>
+    </section>
+    <!-- 섹션영역끝 -->
+    <!-- 푸터영역시작 -->
+    <footer class="footmain w1280 cf">
+        <div class="foot1_1 w1280">
+            <img src="./images/images (3)/logo.png" alt="몽블랑로고">
+            <p>
+                ave s for faster shopping Manage your order his
+            </p>
+            <p>
+                Create an account Save details for faster shopping
+            </p>
+            <p>
+                history and wish list OIN MONTBLANC Create anr
+            </p>
+            <img src="./images/images (3)/sns_facebook.png" alt="페이스북">
+            <img src="./images/images (3)/sns_twitter.png" alt="트위터">
+            <img src="./images/images (3)/sns_insta.png" alt="인스타">
+            <img src="./images/images (3)/sns_naver.png" alt="네이버">
+        </div>
+        <div class="menu">
+            <dl class="foot1_2 w1280">
+                <dt>Services</dt>
+                <dd><a href="#">Personal Shopping</a></dd>
+                <dd><a href="#">Engraving & Embossing</a></dd>
+                <dd><a href="#">Gift Wrapping</a></dd>
+                <dd><a href="#"><sapn>Shipping & Delivery</sapn></a></dd>
+                <dd><a href="#">Returns & Guarantee</a></dd>
+                <dd><a href="#">Click & Collect</a></dd>
+            </dl>
+            <dl class="foot1_3 w1280">
+                <dt>Assistancs</dt>
+                <dd><a href="#">Customer Service</a></dd>
+                <dd><a href="#">Repair Request</a></dd>
+                <dd><a href="#">FAQ</a></dd>
+                <dd><a href="#">Watch Care</a></dd>
+                <dd><a href="#">Leather Care</a></dd>
+                <dd><a href="#">Jewellery Care</a></dd>
+            </dl>
+            <dl class="foot1_4 w1280">
+                <dt>About</dt>
+                <dd><a href="#">Company</a></dd>
+                <dd><a href="#">Contact us</a></dd>
+                <dd><a href="#">Carrer</a></dd>
+            </dl>
+        </div>
+        <div class="foot2 w1280">
+            <p>&copy; 2021 Montblanc</p>
+        </div>
+    </footer>
+    <!-- 푸터영역끝 -->
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트사용</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        h1{
+            font-size: 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            /* a(alpha) = 투명도 | 0부터 ~ 1까지 */
+            color: rgba(0,0,0,0.5);
+            font-style:italic;
+            margin-bottom: 24px;
+
+        }
+        h2{
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 18px;
+            color: #f00;
+            margin-bottom: 24px;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+            font-size: 1.875em;
+            font-size: 187.5%;
+
+            font-size: 14px;
+            /* (14/16) */
+            font-size: 0.875em;
+            /* (0.875*100) */
+            font-size: 87.5%;
+
+            margin-bottom: 24px;
+
+            /* rem 단위 */
+            font-size: 1rem;
+        }
+        .font{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-size: 1.875em;
+            font-size: 187.5%;
+            font-weight: 700;
+            font-style: italic;
+            color: purple;
+            /* 행간 : 문장과 문장사이의 간격 */
+            font-size: 16px;
+            line-height: 1.5em;
+            /* 폰트 한줄 쓰기 */
+            font: bold italic 16px/1.5 'Montserratf',sans-serif;
+            color: skyblue;
+        }
+        .small{
+            color: #0000ff;
+            color: #00f;
+            color: blue;
+            color: rgb(0,0,255);
+            color: rgba(0,0,255,1);
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Web Standard Publishing</h1>
+        <h2>웹표준 방식 코딩</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, non! Quae, ad
+            repellat beatae nisi facilis animi odio provident quas alias dignissimos
+            corporis enim inventore, veritatis qui quia ipsam nihil.
+        </p>
+       <p class="font">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, non! Quae, ad
+            repellat beatae nisi facilis animi odio provident quas alias dignissimos
+            corporis enim inventore, veritatis qui quia ipsam nihil.
+        </p>
+        <p>
+            서울<span class="small">(Seoul)</span>, 대한민국
+        </p>
+    </div>
+</body>
+</html>

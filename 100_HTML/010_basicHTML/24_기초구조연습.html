@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초구조연습</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body{
+            background-color: gray;
+        }
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrap img{
+            width: 960px;
+            height: 200px;
+        }
+        header{
+            background-color: white;
+        }
+        header nav ul li{
+            display: inline-block;
+            margin: 20px;
+        }
+        header nav ul li a:hover{
+            background-color: darkgrey;
+        }
+        #wrap button{   
+            padding: 6px 24px;
+            border-radius: 16px;
+            margin: 20px;
+        }
+        h1{
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+        }
+        p{
+            margin: 20px;
+        }
+        fieldset{
+            background-color: white;
+        }
+        section{
+            background-color: white;
+        }
+        legend{
+            margin: 20px;
+            text-align: center;
+        }
+        footer{
+            margin-top: 20px;
+        }
+        aside{
+            background-color: white;
+        }
+        .aa{
+            font-weight: bold;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">MENU1</a></li>
+                    <li><a href="#">MENU2</a></li>
+                    <li><a href="#">MENU3</a></li>
+                    <li><a href="#">MENU4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <img src="./images/waterboom.jpg" alt="물">
+        </article>
+        <main role="main">
+            <section>
+                <h1>섹션영역</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, tempora
+                    nihil quidem nesciunt nostrum, quod repudiandae ducimus, alias architecto est
+                    repellat pariatur ab molestias? Ab esse illo doloribus eveniet natus?
+                </p>
+            </section>
+            <section>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="aa">개인정보</legend>
+                        <ul>
+                            <li>
+                                <label for="name">이름</label>
+                                <input type="text" id="name" size="130">
+                            </li>
+                            <li>    
+                                <label for="tel">연락처</label>
+                                <input type="tel" id="tel" size="130">
+                            </li>
+                        </ul>
+                        <button type="submit">제출</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <aside>
+                Copyright All Rights Reserved., 2022
+            </aside>
+        </footer>
+    </div>
+</body>
+</html>

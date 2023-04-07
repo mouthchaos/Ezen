@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        *{
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrap{
+            width: 1280px;
+            margin: 0 auto;
+            padding: 76px 60px;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .gnb{
+            text-align: center;
+            margin: 40px;
+        }
+        .gnb li{
+            display: inline-block;
+            margin: 40px;
+        }
+        .gnb li a:hover{
+            color: red;
+            background-color: blue;
+        }
+        img{
+            width: 650px;
+        }
+        span{
+            opacity: 0.8;
+        }
+        section h1{
+            font-weight: bolder;
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        footer h1{
+            font-weight: bolder;
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+        form{
+            margin-bottom: 45px;
+        }
+        .main_image{
+            position: relative;
+        }
+        .main_image_text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate( -50%, -50% );
+            color: #000;
+         }
+         .main_image1{
+            width: 1280px;
+            height: 200px;
+         }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <img src="./images/cloud.png" alt="하늘">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">MENU1</a></li>
+                    <li><a href="#">MENU2</a></li>
+                    <li><a href="#">MENU3</a></li>
+                    <li><a href="#">MENU4</a></li>
+                    <li><a href="#">MENU5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>TITLE</h1>
+            <p><span>2022/03/21</span></p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptas. Hic
+            assumenda natus ipsa minus dolore nobis illum! Recusandae consequatur labore
+            iure quae fugit accusamus commodi tempora alias praesentium. Iusto!
+            </p>
+        </section>
+        <section>
+            <h1>FORM LIST</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Log-in infomation</legend>
+                    <ul>
+                        <li>
+                            <label for="a_id">ID :</label>
+                            <input type="text" id="a_id">
+                        </li>
+                        <li>
+                            <label for="a_pw">PASSWORD :</label>
+                            <input type="password" id="a_pw" maxlength="8">
+                        </li>
+                        <li>
+                            <label for="a_pw2">PASSCHECK :</label>
+                            <input type="password" id="a_pw2" maxlength="8">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Department</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="" value="web publishing">Web publishing
+                            </label>
+                        </li>    
+                        <li>    
+                            <label>
+                                <input type="checkbox" name="" value="app develope">App develope
+                            </label>
+                        </li>
+                        <li>    
+                            <label>
+                                <input type="checkbox" name="" value="Enviroment improvement">Enviroment improvement
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+                <p><input type="submit" value="ok google"></p>                
+                <p><input type="button" value="top" disabled></p>
+        </section>
+        <footer>
+            <div class="main_image">
+                <img class="main_image1" src="./images/cloud.png" alt="하늘">
+                <h1 class="main_image_text">FOOTER</h1>
+                <p class="main_image_text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores tempora,
+                mollitia iusto molestias quis repellat accusamus incidunt, voluptatum veritatis
+                impedit necessitatibus debitis eius autem neque, fugit provident ipsam adipisci
+                eaque.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+    .gnb{
+        margin-top: 24px;
+    }
+    .gnb>ul{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .gnb>ul>li>a{
+        margin: 0 18px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .gnb>ul>li:nth-child(1)>a{
+        margin-left: 0 !important;
+    }
+    .gnb>ul>li>a:hover{
+        color: silver;
+    }
+    .gnb>ul>li span{
+        font-weight: 700;
+        color: #61beb3;
+    }
+    .sub{
+        border: 1px solid #000;
+        text-align: center;
+        display: none;
+    }
+    .sub li{
+        font-size: 11px;
+        background-color: #fff;
+        padding: 10px 0;
+    }
+    .sub li:hover{
+        background-color: silver;
+        transition: all 1s;
+    }
+
+
+
+    /* 호버했을때 2depth 보이기 */
+    .gnb>ul>li:hover .sub{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+    .w1240{
+        width: 1240px;
+        margin: 0 auto;
+    }
+
+
+    header{
+
+    }
+    .login ul{
+        /* 플렉스 */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .login ul li{
+        margin-right: 18px;
+        margin-top: 18px;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .login ul img{
+        width: 13px;
+        height: 13px;
+    }
+    .logo img{
+        /* 포지션 */
+        position: relative;
+        left: -15px;
+        top: -3px;
+        z-index: 1; 
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="login w1240">
+        <ul>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">CART</a></li>
+            <li><a href="#">ORDER</a></li>
+            <li><a href="#">MY&nbsp;PAGE</a></li>
+            <li class="no_mr"><a href="#"><img src="./images/dotbogi2020.png" alt="검색아이콘"></a></li>
+        </ul>
+    </div>
+    <div class="logo w1240">
+        <h1><img src="./images/maisonlogo.png" alt="메종드로고"></h1>
+    </div>
+    <div class="gnb w1240">
+        <ul>
+            <li>
+                <a href="#"><span>EVENT</span></a>
+            </li>
+            <li>
+                <a href="#">BRAND</a>
+                <ul class="sub">
+                    <li><a href="#">블로무스</a></li>
+                    <li><a href="#">루씨에어</a></li>
+                    <li><a href="#">르푸</a></li>
+                    <li><a href="#">네오즈</a></li>
+                    <li><a href="#">바오밥컬렉션</a></li>
+                    <li><a href="#">럭키보이선데이</a></li>
+                    <li><a href="#">아르테미데</a></li>
+                    <li><a href="#">우유니</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BEST</a>
+            </li>
+            <li>
+                <a href="#">NEW</a>
+            </li>
+            <li>
+                <a href="#">CEILING FAN</a>
+                <ul class="sub">
+                    <li><a href="#">Lucci Air</a></li>
+                    <li><a href="#">Maison de <br> concept</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">FURNITURE</a>
+                <ul class="sub">
+                    <li><a href="#">Fire Place</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Stand</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">LIGHTING</a>
+                <ul class="sub">
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Floor</a></li>
+                    <li><a href="#">Pendant</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">HOME DECO</a>
+                <ul class="sub">
+                    <li><a href="#">Sink faucet</a></li>
+                    <li><a href="#">Bath</a></li>
+                    <li><a href="#">Kitchenware</a></li>
+                    <li><a href="#">Wine</a></li>
+                    <li><a href="#">Coffee</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">MAGAZINE</a>
+            </li>
+            <li>
+                <a href="#">STORE</a>
+            </li>
+            <li>
+                <a href="#">COMMUNITY</a>
+                <ul class="sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객리뷰</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">문의사항</a></li>
+                    <li><a href="#">쇼룸안내</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <i class=“fal fa-wallet”></i>
+        <i class="icon-wallet"></i>
+        
+    </section>
+</body>
+</html>

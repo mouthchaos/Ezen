@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변크기실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            /* 내마음속 width값 */
+            width: 900px;
+            width: 90%;
+            margin: 0 auto;
+            /* 플렉스 */
+            display: flex;
+            flex-flow: row wrap;
+        }
+        #wrap div:nth-child(1){
+            background-color: green;
+            width: 300px;
+            /* (300/900)*100 = 33.33333333333333 */
+            width: 33.3333%;
+            height: 400px;
+        }
+        #wrap div:nth-child(2){
+            background-color: blue;
+            width: 600px;
+            /* (600/900)*100 = 66.66666666666666 */
+            width: 66.6667%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

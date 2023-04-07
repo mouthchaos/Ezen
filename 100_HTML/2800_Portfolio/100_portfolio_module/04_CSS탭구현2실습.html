@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .button{
+            max-width: 1000px;
+            margin: 8px auto;
+            padding: 30px;
+            text-align: left;
+            font-size: 0;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        input[type="radio"]+label{
+            display: inline-block;
+            border: 1px solid #000;
+            font-size: 18px;
+            padding: 18px;
+            background: silver;
+            border-right: 0;
+            cursor: pointer;
+        }
+        #btn03+label{
+            border-right: 1px solid #000;
+        }
+
+        input[type="radio"]:checked +label{
+            background-color: #000;
+            color: #fff;
+        }
+
+
+
+        .content{
+            width: 1000px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: rgb(255, 175, 1);
+            font-size: 18px;
+            display: none;
+            padding: 30px;
+        }
+        div span{
+            background-color: yellow;
+        }
+        
+        /* 연동 */
+        input[id="btn01"]:checked ~ .contents1{
+            display: block;
+        }
+        input[id="btn02"]:checked ~ .contents2{
+            display: block;
+        }
+        input[id="btn03"]:checked ~ .contents3{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button">
+        <input type="radio" name="button" id="btn01" checked>
+        <label for="btn01">Free Board</label>
+        <input type="radio" name="button" id="btn02" checked>
+        <label for="btn02">QnA</label>
+        <input type="radio" name="button" id="btn03" checked>
+        <label for="btn03">Blog</label>
+        <div class="content contents1">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error aliquam <br>
+                voluptatibus iste quaerat. Delectus dolore, qui et at harum provident mollitia <br>
+                recusandae maiores soluta reprehenderit sit <span>placeat voluptate quam</span>. <br>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error aliquam <br>
+                voluptatibus iste quaerat. Delectus dolore, qui et at harum provident mollitia <br>
+                recusandae maiores soluta reprehenderit sit <span>placeat voluptate quam</span>. <br>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab error aliquam <br>
+                voluptatibus iste quaerat. Delectus dolore, qui et at harum provident mollitia <br>
+                recusandae maiores soluta reprehenderit sit <span>placeat voluptate quam</span>. <br>
+            </p>
+        </div>
+        <div class="content contents2">
+            <p>
+                Tab Content 02 Tab Content 02 Tab Content 02
+            </p> 
+        </div>
+        <div class="content contents3">
+            <p>
+                Tab Content 03 Tab Content 03 Tab Content 03
+            </p>
+        </div>
+    </div>
+</body>
+</html>

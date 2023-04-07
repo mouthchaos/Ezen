@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간격시스템</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap{
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid blue;
+            padding: 40px;
+        }
+        section{
+            width: 800px;
+            margin-bottom: 20px;
+        }
+        .sec_left{
+            width: 300px;
+            float: left;
+        }
+        .sec_right{
+            width: 500px;
+            float: right;
+        }
+        .sec_right h1{
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 22px;
+        }
+        .sec_right h2 span{
+            color: red;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .sec_right table{
+            padding-top: 40px;
+            height: 40px;
+        }
+        .sec_right table th{
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .sec_right table td{
+            font-size: 12px;
+        }
+        .pd{
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+
+
+        .art{
+            width: 800px;
+        }
+        .art1_left{
+            width: 300px;
+            float: left;
+        }
+        .art1_left p{
+            float: right;
+        }
+        .art1_right{
+            width: 500px;
+            float: right;
+        }
+        .art1_right button{
+            color: white;
+            background-color: blue;
+            width: 146px;
+            height: 48px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section class="cf">
+            <div class="sec_left">
+                <img src="http://placehold.it/240x320/000000" alt="240x320">
+            </div>
+            <div class="sec_right">
+                <div>
+                    <h1>Lego Musk Express</h1>
+                    <h2>
+                        <s>300,000원</s><br>
+                        <span>20% 240,000원</span>
+                    </h2>
+                </div>
+                <div class="pd">
+                    <table>
+                        <tr>
+                            <th>추가혜택</th>
+                            <td>
+                                현대카드 93,600원(2%청구할인) <br>
+                                적립금 950포인트 <br>
+                                월할부금 월 15,000원(6개월 할부시) <br>
+                                무이자 카드보기
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>배송비</th>
+                            <td>0원 (결제금액 7만원이상 무료)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <article>
+            <div class="art1 cf">
+                <div class="art1_left">
+                    <img src="http://placehold.it/50x50/000000" alt="50x50">
+                        <p>
+                            Lego <br>
+                            덴마크 장난감 회사 <br>
+                            BRNAD HOME 
+                        </p>
+                </div>
+                <div class="art1_right">
+                    <button><a href="#">장바구니담기</a></button>
+                    <button><a href="#">구매하기</a></button>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
